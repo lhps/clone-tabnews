@@ -38,7 +38,7 @@ async function runPendingMigrations() {
       dryRun: false,
     });
 
-    return migratedMigrations
+    return migratedMigrations;
   } finally {
     await dbClient?.end();
   }
@@ -46,7 +46,7 @@ async function runPendingMigrations() {
 
 const migrator = {
   listPendingMigrations,
-  runPendingMigrations
+  runPendingMigrations,
 };
 
 export default migrator;
