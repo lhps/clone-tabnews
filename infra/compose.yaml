@@ -1,3 +1,5 @@
+name: "curso-dev"
+
 services:
   database:
     container_name: "postgres-dev"
